@@ -46,7 +46,6 @@ class PublicationsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def publication_params
-      params.require(:
-      ).permit(:title, :summary)
+      params.require(:publication).permit(:title, :summary)
     end
 end
